@@ -1,5 +1,6 @@
-import 'package:bd_tour_guide/splash_screen.dart';
+import 'package:bd_tour_guide/custom/my_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -11,13 +12,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.blue[400],
+    return ScreenUtilInit(
+      designSize: const Size(428, 926),
+      builder: (_, child) => GetMaterialApp(
+        theme: ThemeData(
+          brightness: Brightness.dark,
+          primaryColor: Colors.blue[400],
+        ),
+        initialRoute: '/',
+        routes: myRoutes,
+        debugShowCheckedModeBanner: false,
+        // home: const SplashScreen(),
       ),
-      debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
     );
   }
 }

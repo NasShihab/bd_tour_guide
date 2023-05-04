@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../database_list.dart';
+import 'place_category.dart';
 
 class Places extends StatelessWidget {
   const Places({Key? key}) : super(key: key);
@@ -25,7 +26,9 @@ class Places extends StatelessWidget {
               places.length,
               (index) => Center(
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed('/dhaka',);
+                  },
                   child: Ink(
                     width: double.infinity,
                     height: 100,
