@@ -49,16 +49,19 @@ class HomePage extends StatelessWidget {
                 height20(),
                 InkWell(
                   onTap: () {
-                    Get.to(Dashboard());
+                    Get.to(Dashboard(), transition: Transition.leftToRight);
                   },
                   child: Ink(
                     height: 40,
                     width: 40,
-                    decoration: const BoxDecoration(color: Colors.white),
+                    decoration: BoxDecoration(
+                      color: Colors.tealAccent,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                     child: const Icon(
                       Icons.arrow_forward_ios,
                       size: 30,
-                      color: Colors.black38,
+                      color: Colors.black,
                     ),
                   ),
                 ),

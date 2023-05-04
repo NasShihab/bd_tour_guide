@@ -1,4 +1,4 @@
-import 'package:bd_tour_guide/dashboard/home_screen.dart';
+import 'package:bd_tour_guide/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blue[400],
       ),
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const SplashScreen(),
     );
   }
 }
