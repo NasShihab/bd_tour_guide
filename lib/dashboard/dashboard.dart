@@ -3,7 +3,7 @@ import 'package:bd_tour_guide/dashboard/places/places.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'controller.dart';
+import 'dashboard_controller.dart';
 
 class Dashboard extends StatelessWidget {
   Dashboard({Key? key}) : super(key: key);

@@ -12,9 +12,8 @@ class Places extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/places/dhaka.jpg'),
-            fit: BoxFit.cover,
-            opacity: 0.2),
+            image: AssetImage('assets/background/bcg08.jpg'),
+            fit: BoxFit.cover),
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -42,15 +41,15 @@ class Places extends StatelessWidget {
                         child: Ink(
                           width: double.infinity,
                           height: 100.h,
-                          decoration: const BoxDecoration(
-                            color: Colors.white,
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurpleAccent.withOpacity(0.5),
                           ),
                           child: Center(
                             child: Text(
                               places[index].title.toString(),
                               style: GoogleFonts.secularOne(
-                                  fontSize: 40.sp,
-                                  color: Colors.deepPurple,
+                                  fontSize: 50.sp,
+                                  color: Colors.white,
                                   fontWeight: FontWeight.bold),
                             ),
                           ),
