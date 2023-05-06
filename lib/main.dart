@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       builder: (_, child) => GetMaterialApp(
         theme: ThemeData(
           brightness: Brightness.dark,
-          primaryColor: Colors.blue[400],
+          primaryColor: const Color(0xFF0b2d39),
         ),
         initialRoute: '/',
         routes: myRoutes,

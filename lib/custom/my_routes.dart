@@ -5,7 +5,7 @@ import 'package:flutter/cupertino.dart';
 import '../splash_screen.dart';
 
 var myRoutes = <String, WidgetBuilder>{
-  '/': (context) => const Dhaka(),
+  '/': (context) => const SplashScreen(),
   '/splash_screen': (context) => const SplashScreen(),
   '/home_page': (context) => const HomePage(),
   '/dhaka': (context) => const Dhaka(),
