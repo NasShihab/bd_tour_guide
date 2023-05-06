@@ -21,7 +21,7 @@ Widget col1(BuildContext context) => SingleChildScrollView(
                       child: InkWell(
                         onTap: () async {
                           final url = Uri.parse(
-                              'https://en.wikipedia.org/wiki/Lalbagh_Fort');
+                              dhakaModelLeft[index].urls.toString());
                           if (await canLaunchUrl(url)) {
                             await launchUrl(url);
                           }
