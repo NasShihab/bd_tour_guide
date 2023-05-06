@@ -8,11 +8,10 @@ class Dhaka extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: Theme.of(context).primaryColor
-        // image: DecorationImage(
-        //     image: AssetImage('assets/places/dhaka.jpg'), fit: BoxFit.cover, opacity: 0.3),
-      ),
+      decoration: BoxDecoration(color: Theme.of(context).primaryColor
+          // image: DecorationImage(
+          //     image: AssetImage('assets/places/dhaka.jpg'), fit: BoxFit.cover, opacity: 0.3),
+          ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SafeArea(
@@ -21,8 +20,12 @@ class Dhaka extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(child: col1(context)),
-                Expanded(child: col2(context)),
+                Expanded(
+                  child: col1(context),
+                ),
+                Expanded(
+                  child: col2(context),
+                ),
               ],
             ),
           ),
