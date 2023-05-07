@@ -1,8 +1,9 @@
-import 'package:bd_tour_guide/dashboard/home_screen.dart';
-import 'package:bd_tour_guide/dashboard/places/places.dart';
+
+import 'package:bd_tour_guide/dashboard/bottom_navigation/places/places.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../on_boarding/home_screen.dart';
 import 'dashboard_controller.dart';
 
 class Dashboard extends StatelessWidget {

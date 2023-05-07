@@ -1,6 +1,8 @@
-import 'package:bd_tour_guide/dashboard/places/dhaka/dhaka_widget.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'dhaka_widget.dart';
 
 class Dhaka extends StatelessWidget {
   const Dhaka({Key? key}) : super(key: key);

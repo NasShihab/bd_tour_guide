@@ -1,9 +1,10 @@
 import 'package:bd_tour_guide/custom/custom_height.dart';
-import 'package:bd_tour_guide/dashboard/places/dhaka/data_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import 'data_model.dart';
 
 Widget col1(BuildContext context) => SingleChildScrollView(
       scrollDirection: Axis.vertical,

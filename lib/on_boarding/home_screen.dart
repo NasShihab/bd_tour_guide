@@ -1,6 +1,7 @@
 import 'package:bd_tour_guide/custom/custom_height.dart';
 import 'package:bd_tour_guide/dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
@@ -47,27 +48,23 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(color: Colors.white, fontSize: 20),
                 ),
                 height20(),
-                InkWell(
-                  onTap: () {
-                    Get.to(Dashboard(), transition: Transition.leftToRight);
-                  },
-                  child: Ink(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      color: Colors.tealAccent,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: const Icon(
-                      Icons.arrow_forward_ios,
-                      size: 30,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButton: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            fixedSize: Size(250.w, 60.h),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30.0),
+            ),
+            textStyle: TextStyle(fontSize: 35.sp, fontWeight: FontWeight.bold),
+          ),
+          onPressed: () {
+            Get.to(Dashboard(), transition: Transition.leftToRight);
+          },
+          child: const Text('EXPLORE'),
         ),
       ),
     );
